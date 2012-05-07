@@ -3,7 +3,7 @@ BEGIN {
   $MooX::Role::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $MooX::Role::VERSION = '0.002';
+  $MooX::Role::VERSION = '0.003';
 }
 # ABSTRACT: Using Moo::Role and MooX:: packages the most lazy way
 
@@ -30,7 +30,7 @@ MooX::Role - Using Moo::Role and MooX:: packages the most lazy way
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 

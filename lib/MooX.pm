@@ -3,7 +3,7 @@ BEGIN {
   $MooX::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $MooX::VERSION = '0.002';
+  $MooX::VERSION = '0.003';
 }
 # ABSTRACT: Using Moo and MooX:: packages the most lazy way
 
@@ -30,7 +30,6 @@ sub import_base {
 		my $package = $_->[0];
 		my $opts = $_->[1];
 		for ($package) { s/^\+// or $_ = "MooX::$_" };
-		croak "No package name given" if ref $package;
 		my @args = ref $opts eq 'ARRAY'
 			? @{$opts}
 			: ref $opts eq 'HASH'
@@ -52,7 +51,7 @@ MooX - Using Moo and MooX:: packages the most lazy way
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
