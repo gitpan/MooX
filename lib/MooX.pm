@@ -3,7 +3,7 @@ BEGIN {
   $MooX::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $MooX::VERSION = '0.001';
+  $MooX::VERSION = '0.002';
 }
 # ABSTRACT: Using Moo and MooX:: packages the most lazy way
 
@@ -15,9 +15,14 @@ use Carp;
 use Data::OptList;
 
 sub import {
-	my ( $self, @modules ) = @_;
+	my ( $class, @modules ) = @_;
 	my $target = caller;
 	unshift @modules, '+Moo';
+	MooX::import_base($class,$target,@modules);
+}
+
+sub import_base {
+	my ( $class, $target, @modules ) = @_;
 	my @optlist = @{Data::OptList::mkopt([@modules],{
 		must_be => [qw( ARRAY HASH )],
 	})};
@@ -47,7 +52,7 @@ MooX - Using Moo and MooX:: packages the most lazy way
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
