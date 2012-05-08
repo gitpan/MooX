@@ -42,7 +42,7 @@
          "web" : "https://github.com/Getty/p5-moox"
       }
    },
-   "version" : "0.100",
+   "version" : "0.101",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
