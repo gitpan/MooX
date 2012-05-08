@@ -3,7 +3,7 @@ BEGIN {
   $MooX::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $MooX::VERSION = '0.003';
+  $MooX::VERSION = '0.100';
 }
 # ABSTRACT: Using Moo and MooX:: packages the most lazy way
 
@@ -51,7 +51,7 @@ MooX - Using Moo and MooX:: packages the most lazy way
 
 =head1 VERSION
 
-version 0.003
+version 0.100
 
 =head1 SYNOPSIS
 
